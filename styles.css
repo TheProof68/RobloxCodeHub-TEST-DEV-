@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  header {
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .site-title {
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav ul li a.active {
+    background-color: #000;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  .description {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .description h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .description ul li {
+    color: #333;
+    font-size: 16px;
+  }
+
+  .discord-link img {
+    height: 20px; /* Taille ajustée pour le logo */
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+  }
+
+  .scrollable-footer {
+    max-height: 100px; /* Hauteur maximale de la zone scrollable */
+    overflow-y: auto; /* Activation du défilement vertical si le contenu dépasse la hauteur maximale */
+  }
+
+
+  .frame-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem; /* Espacement entre les frames */
+  }
+  
+  .frame {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    border-radius: 10px; /* Bord arrondi */
+    padding: 10px; /* Espacement à l'intérieur du frame */
+    width: 250px; /* Largeur de 100 pixels */
+    height: 250px; /* Hauteur de 100 pixels */
+    margin-bottom: 0.9rem; /* Espacement en bas */
+    text-align: center; /* Centrer le contenu */
+  }
+  
+  .frame img {
+    max-width: 80%; /* Image prenant une largeur maximale de 80% du frame */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    border-radius: 10px; /* Bord arrondi */
+  }
+  
+  .frame p {
+    color: white; /* Couleur du texte */
+  }
+  
+  .frame button {
+    background-color: #7289DA; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 8px 16px; /* Espacement à l'intérieur du bouton */
+    border-radius: 5px; /* Bord arrondi */
+    cursor: pointer; /* Curseur pointeur au survol */
+    margin-top: 10px; /* Espacement au-dessus du bouton */
+  }
+  
+  .frame button:hover {
+    background-color: #925905; /* Couleur de fond du bouton au survol */
+  }
+  
+  @media (max-width: 768px) {
+    .frame {
+      width: calc(50% - 0.9rem); /* Deux frames par ligne sur les petits écrans */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .frame {
+      width: 100%; /* Un frame par ligne sur les écrans très petits */
+    }
+  }
